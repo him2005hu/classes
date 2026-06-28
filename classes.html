@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AKS Classes | Expert Coaching in Ghaziabad</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f8f9fa",
+                        "primary-container": "#1a56db",
+                        "on-tertiary-container": "#d4dbff",
+                        "primary-fixed-dim": "#b5c4ff",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#001a42",
+                        "on-tertiary-fixed": "#00164d",
+                        "secondary-container": "#2470e4",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-dim": "#d9dadb",
+                        "secondary": "#0057c0",
+                        "on-surface-variant": "#434654",
+                        "primary-fixed": "#dbe1ff",
+                        "outline-variant": "#c3c5d7",
+                        "secondary-fixed-dim": "#aec6ff",
+                        "secondary-fixed": "#d8e2ff",
+                        "tertiary-fixed": "#dbe1ff",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#b5c4ff",
+                        "tertiary-container": "#3b5bb9",
+                        "on-primary-container": "#d4dcff",
+                        "error-container": "#ffdad6",
+                        "background": "#f8f9fa",
+                        "tertiary-fixed-dim": "#b5c4ff",
+                        "surface-tint": "#1353d8",
+                        "on-secondary-container": "#fefcff",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary-fixed-variant": "#003dab",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#00174d",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#edeeef",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "surface-variant": "#e1e3e4",
+                        "on-surface": "#191c1d",
+                        "primary": "#003fb1",
+                        "tertiary": "#1e429f",
+                        "on-secondary-fixed-variant": "#004396",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-background": "#191c1d",
+                        "on-tertiary-fixed-variant": "#1a3f9c",
+                        "outline": "#737686"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "24px",
+                        "sm": "8px",
+                        "xl": "40px",
+                        "base": "4px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "2xl": "64px",
+                        "margin-desktop": "48px",
+                        "xs": "4px",
+                        "md": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ambient-shadow {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        .ambient-shadow:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            transform: translateY(-4px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(248, 249, 250, 0.9) 0%, rgba(219, 225, 255, 0.4) 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface shadow-sm h-20 transition-all duration-300">
+<nav class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop h-full flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">school</span>
+<span class="font-headline-md text-headline-md font-bold text-primary">AKS Classes</span>
+</div>
+<div class="hidden md:flex items-center gap-xl">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#courses">Courses</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#why-us">Why Choose Us</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#features">Features</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-md">
+<a class="bg-primary text-on-primary px-lg py-sm rounded-full font-label-md text-label-md hover:bg-primary-container transition-all active:scale-95 flex items-center gap-2" href="tel:9354114810">
+<span class="material-symbols-outlined text-[18px]">call</span>
+                    Call Now
+                </a>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-10" data-alt="A clean, professional educational environment background featuring blurred classroom silhouettes and abstract geometric blue lines. The lighting is bright and high-key, conveying a sense of academic excellence and modern corporate learning. Subtle blue and white gradients overlay the image to maintain legibility of the foreground text." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCkbXRZ7sWwwMT6MGTrMuMSgD0pFuQ6eG5pFyZqf1ZSvSvTrE1Madr9RZ8PFseiVnstA3mg9dg8KP3mqcHTnNxloFUoCKPd4aB2WjrVEDYefayt82ZEcdRD-9Nr2ILhfeFZbizhbqLZ_EyeSrAKFkNHkMxINeo67jSGjr4rQ_0yGcvWweyF_YjRvLvhM9DoAPx0e-elTG7-kumY8V6Q9DsPQfz6PWRCdAaFaSZE4rkJ7T30eaIz9VV8bd67ASoq5OELJ9z9RyxsNOTQ')"></div>
+</div>
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop relative z-10 grid md:grid-cols-2 gap-xl items-center py-2xl">
+<div class="space-y-lg text-center md:text-left">
+<h1 class="font-display-lg text-display-lg text-on-surface leading-tight">
+                        Shape Your Future with <span class="text-primary">AKS Classes</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto md:mx-0">
+                        Expert Coaching for Classes 6–12 Commerce with Personalized Guidance and Excellent Results. Empowering students in Ghaziabad through clarity and excellence.
+                    </p>
+<div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-md pt-md">
+<a class="w-full sm:w-auto bg-primary text-on-primary px-xl py-md rounded-xl font-label-md text-label-md hover:bg-primary-container transition-all shadow-lg flex items-center justify-center gap-2" href="tel:9354114810">
+<span class="material-symbols-outlined">call</span>
+                            Call Now
+                        </a>
+<a class="w-full sm:w-auto bg-white border-2 border-primary text-primary px-xl py-md rounded-xl font-label-md text-label-md hover:bg-primary-fixed transition-all flex items-center justify-center gap-2" href="https://wa.me/919354114810" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+                            WhatsApp Now
+                        </a>
+</div>
+</div>
+<div class="hidden md:block relative">
+<div class="relative z-10 rounded-2xl overflow-hidden ambient-shadow aspect-video">
+<img class="w-full h-full object-cover" data-alt="A focused group of high school students studying commerce together in a bright, modern classroom setting. The atmosphere is professional yet collaborative, with students using laptops and textbooks. The lighting is soft and natural, emphasizing a high-end educational environment with a cool blue and white aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiSSMR6RGwqP0voSKs62W3h9Z8oGO63yAjwsk_BIEofT2TNdboqPrfOaI9bz5rTbhqLF4Ik9H-E5wJxRAWkB54aReN2buN4dLOxPtiOf8PAKrddsTlYfYeFDA52c7rcRCBKA1MFIiwbsnMSEkGyFCqfhLCPNE56BEeK1nt1EeeYlCFWIJHFZOXDEJ_tVst5XZUi-UnHQtKWWH7T-pd8uTf-21GrHGhPe-fRzFXDnbnVS3rteG8ZCRrnNK6qtdi-I6YakN7GHavfFSe"/>
+</div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary-container rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-pulse"></div>
+<div class="absolute -top-6 -left-6 w-32 h-32 bg-secondary-container rounded-full mix-blend-multiply filter blur-2xl opacity-20"></div>
+</div>
+</div>
+</section>
+<!-- Courses Section -->
+<section class="py-2xl bg-surface-container-low" id="courses">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-2xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Our Courses</h2>
+<div class="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-lg">
+<!-- Cards -->
+<div class="bg-white p-lg rounded-xl ambient-shadow flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-md">groups</span>
+<h3 class="font-headline-md text-headline-md mb-sm">Class 6 to 10</h3>
+<p class="text-on-surface-variant font-body-md">Comprehensive coaching for all primary and middle school subjects.</p>
+<span class="mt-auto pt-lg font-label-md text-primary">All Subjects</span>
+</div>
+<div class="bg-white p-lg rounded-xl ambient-shadow flex flex-col items-center text-center border-t-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-md">trending_up</span>
+<h3 class="font-headline-md text-headline-md mb-sm">Class 11 Commerce</h3>
+<p class="text-on-surface-variant font-body-md">Laying the foundation for a successful career in commerce and finance.</p>
+</div>
+<div class="bg-white p-lg rounded-xl ambient-shadow flex flex-col items-center text-center border-t-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-md">workspace_premium</span>
+<h3 class="font-headline-md text-headline-md mb-sm">Class 12 Commerce</h3>
+<p class="text-on-surface-variant font-body-md">Specialized preparation for boards with a focus on core scoring areas.</p>
+</div>
+<div class="bg-white p-lg rounded-xl ambient-shadow flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-md">calculate</span>
+<h3 class="font-headline-md text-headline-md mb-sm">Accountancy</h3>
+<p class="text-on-surface-variant font-body-md">Mastering the art of bookkeeping and financial analysis.</p>
+</div>
+<div class="bg-white p-lg rounded-xl ambient-shadow flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-md">functions</span>
+<h3 class="font-headline-md text-headline-md mb-sm">Mathematics</h3>
+<p class="text-on-surface-variant font-body-md">Simplifying complex concepts through logical reasoning and practice.</p>
+</div>
+<div class="bg-white p-lg rounded-xl ambient-shadow flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-md">insights</span>
+<h3 class="font-headline-md text-headline-md mb-sm">Economics</h3>
+<p class="text-on-surface-variant font-body-md">Understanding market dynamics and macroeconomic principles.</p>
+</div>
+<div class="bg-white p-lg rounded-xl ambient-shadow flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-md">business_center</span>
+<h3 class="font-headline-md text-headline-md mb-sm">Business Studies</h3>
+<p class="text-on-surface-variant font-body-md">Deep dive into management, marketing, and business organization.</p>
+</div>
+<div class="bg-primary text-on-primary p-lg rounded-xl ambient-shadow flex flex-col justify-center items-center text-center">
+<h3 class="font-headline-md text-headline-md mb-md">Join Us Today</h3>
+<p class="mb-lg font-body-md opacity-90">Personalized study plans for every student's unique needs.</p>
+<a class="bg-white text-primary px-lg py-sm rounded-full font-label-md hover:bg-surface transition-all" href="tel:9354114810">Enroll Now</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us Section -->
+<section class="py-2xl bg-white" id="why-us">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row gap-2xl items-center">
+<div class="md:w-1/3">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">Why Choose AKS Classes?</h2>
+<p class="text-on-surface-variant font-body-lg mb-xl">We provide more than just teaching; we provide a pathway to academic success with our student-first philosophy.</p>
+<div class="rounded-xl overflow-hidden aspect-square">
+<img class="w-full h-full object-cover" data-alt="A portrait of a smiling, professional teacher pointing to a whiteboard with complex commerce formulas. The lighting is warm and inviting, showing a supportive educational environment. High resolution, professional photography in a modern study center located in Ghaziabad." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuXkpF7uW9HwebSrStxnJsjDoNC1-zYrRvbCsrSfFiuwB134y14YDdzI4sl6gKaozqOlJekIJeJf4-qBVOSHcZ18fazf4x9qYavk43xRYuFAnnQ0OT45nmbm6kF4SeJVFcUQSb_INnbZAuZJldmdrXxURpkGyKT0ep6eOkou__Nojg9swagEbVODL4Zi5rx2iJCuFHWKqyR33sdZpUULW4syhm8je31YP1NiA3yBCFKApmdnAhnz9lFzM0JEwZLsD8pCwBzwH0aFVg"/>
+</div>
+</div>
+<div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-lg">
+<div class="flex gap-md items-start p-md hover:bg-surface-container rounded-xl transition-colors">
+<div class="bg-primary-container p-sm rounded-lg text-on-primary">
+<span class="material-symbols-outlined">person_pin</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-[18px] mb-xs">Experienced Teachers</h4>
+<p class="text-on-surface-variant text-body-md">Guidance from experts who understand board exam patterns perfectly.</p>
+</div>
+</div>
+<div class="flex gap-md items-start p-md hover:bg-surface-container rounded-xl transition-colors">
+<div class="bg-primary-container p-sm rounded-lg text-on-primary">
+<span class="material-symbols-outlined">reduce_capacity</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-[18px] mb-xs">Small Batch Size</h4>
+<p class="text-on-surface-variant text-body-md">Ensuring every student gets the individual attention they deserve.</p>
+</div>
+</div>
+<div class="flex gap-md items-start p-md hover:bg-surface-container rounded-xl transition-colors">
+<div class="bg-primary-container p-sm rounded-lg text-on-primary">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-[18px] mb-xs">Personal Attention</h4>
+<p class="text-on-surface-variant text-body-md">Customized teaching approach based on student's learning pace.</p>
+</div>
+</div>
+<div class="flex gap-md items-start p-md hover:bg-surface-container rounded-xl transition-colors">
+<div class="bg-primary-container p-sm rounded-lg text-on-primary">
+<span class="material-symbols-outlined">assignment_turned_in</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-[18px] mb-xs">Regular Tests</h4>
+<p class="text-on-surface-variant text-body-md">Weekly assessments to track progress and identify weak areas.</p>
+</div>
+</div>
+<div class="flex gap-md items-start p-md hover:bg-surface-container rounded-xl transition-colors">
+<div class="bg-primary-container p-sm rounded-lg text-on-primary">
+<span class="material-symbols-outlined">live_help</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-[18px] mb-xs">Doubt Sessions</h4>
+<p class="text-on-surface-variant text-body-md">Dedicated time to solve queries and clear concepts thoroughly.</p>
+</div>
+</div>
+<div class="flex gap-md items-start p-md hover:bg-surface-container rounded-xl transition-colors">
+<div class="bg-primary-container p-sm rounded-lg text-on-primary">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-[18px] mb-xs">Affordable Fees</h4>
+<p class="text-on-surface-variant text-body-md">Quality education made accessible for all families in Ghaziabad.</p>
+</div>
+</div>
+<div class="flex gap-md items-start p-md hover:bg-surface-container rounded-xl transition-colors col-span-full">
+<div class="bg-primary-container p-sm rounded-lg text-on-primary">
+<span class="material-symbols-outlined">forum</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-[18px] mb-xs">WhatsApp Support</h4>
+<p class="text-on-surface-variant text-body-md">24/7 connectivity for instant query resolution and student-parent coordination.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="py-2xl bg-surface-container" id="features">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-2xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Exclusive Features</h2>
+<p class="text-on-surface-variant font-body-lg">How we ensure 100% preparation for every student.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg h-auto md:h-[600px]">
+<div class="md:col-span-2 bg-white rounded-2xl p-xl flex flex-col justify-between ambient-shadow relative overflow-hidden group">
+<div>
+<h3 class="font-headline-md text-headline-md mb-md">Performance Tracking</h3>
+<p class="text-on-surface-variant font-body-md max-w-md">Detailed analytical reports shared with parents monthly to ensure continuous improvement and transparency.</p>
+</div>
+<div class="mt-xl">
+<div class="w-full bg-surface-container-high h-4 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-3/4 rounded-full transition-all duration-1000 group-hover:w-full"></div>
+</div>
+<div class="flex justify-between mt-sm font-label-md text-primary">
+<span>Curriculum Progress</span>
+<span>85% Completed</span>
+</div>
+</div>
+<span class="material-symbols-outlined absolute -bottom-8 -right-8 text-[160px] opacity-5 text-primary rotate-12">monitoring</span>
+</div>
+<div class="bg-primary text-on-primary rounded-2xl p-xl flex flex-col justify-center items-center text-center ambient-shadow relative overflow-hidden">
+<span class="material-symbols-outlined text-6xl mb-md">menu_book</span>
+<h3 class="font-headline-md text-headline-md mb-md">Notes &amp; Study Material</h3>
+<p class="opacity-90 font-body-md">Handcrafted, simplified notes designed for quick revision and deep understanding.</p>
+</div>
+<div class="bg-white rounded-2xl p-xl flex flex-col ambient-shadow">
+<h3 class="font-headline-md text-headline-md mb-md">Weekly Tests</h3>
+<p class="text-on-surface-variant font-body-md mb-lg">Simulating board exam environments to build confidence and time management skills.</p>
+<div class="mt-auto flex -space-x-2">
+<div class="w-10 h-10 rounded-full border-2 border-white bg-secondary flex items-center justify-center text-white text-xs font-bold">100</div>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-primary flex items-center justify-center text-white text-xs font-bold">98</div>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-tertiary flex items-center justify-center text-white text-xs font-bold">95</div>
+</div>
+</div>
+<div class="md:col-span-2 bg-white rounded-2xl p-xl flex items-center gap-xl ambient-shadow">
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md mb-md">Regular Assignments</h3>
+<p class="text-on-surface-variant font-body-md">Topic-wise worksheets that reinforce classroom learning through practical application.</p>
+</div>
+<div class="hidden sm:block w-32 h-32 bg-surface-container rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-5xl">task</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Student Success / Testimonials -->
+<section class="py-2xl bg-white">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-2xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Success Stories</h2>
+<p class="text-on-surface-variant font-body-lg">Hear from our students who achieved their dreams.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<div class="p-lg bg-surface rounded-xl border border-outline-variant relative">
+<span class="material-symbols-outlined text-primary opacity-20 absolute top-4 right-4 text-4xl">format_quote</span>
+<div class="flex items-center gap-md mb-md">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-primary">RS</div>
+<div>
+<h4 class="font-label-md text-label-md">Rahul Sharma</h4>
+<p class="text-xs text-on-surface-variant">Class 12 Commerce, 96%</p>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-md italic">"AKS Classes provided me with the clarity I needed for Accountancy. The personal attention here is unmatched in Ghaziabad."</p>
+</div>
+<div class="p-lg bg-surface rounded-xl border border-outline-variant relative">
+<span class="material-symbols-outlined text-primary opacity-20 absolute top-4 right-4 text-4xl">format_quote</span>
+<div class="flex items-center gap-md mb-md">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-primary">PV</div>
+<div>
+<h4 class="font-label-md text-label-md">Priya Verma</h4>
+<p class="text-xs text-on-surface-variant">Class 11 Commerce</p>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-md italic">"The small batch sizes really help. I never hesitate to ask questions during the doubt sessions. Truly best coaching."</p>
+</div>
+<div class="p-lg bg-surface rounded-xl border border-outline-variant relative">
+<span class="material-symbols-outlined text-primary opacity-20 absolute top-4 right-4 text-4xl">format_quote</span>
+<div class="flex items-center gap-md mb-md">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-primary">AK</div>
+<div>
+<h4 class="font-label-md text-label-md">Amit Kumar</h4>
+<p class="text-xs text-on-surface-variant">Class 12, Economics 98/100</p>
+</div>
+</div>
+<p class="text-on-surface-variant font-body-md italic">"The notes provided were so concise and easy to understand. It made my board exam revision extremely efficient."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-2xl bg-surface-container-high" id="contact">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-white rounded-3xl overflow-hidden ambient-shadow flex flex-col md:flex-row">
+<div class="md:w-1/2 p-xl bg-primary text-on-primary">
+<h2 class="font-headline-lg text-headline-lg mb-xl">Get In Touch</h2>
+<div class="space-y-lg">
+<div class="flex gap-md items-center">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+<div>
+<h4 class="font-label-md">Address</h4>
+<p class="opacity-90">Prem Vihar, Khora Colony, Ghaziabad – 201309</p>
+</div>
+</div>
+<div class="flex gap-md items-center">
+<span class="material-symbols-outlined text-3xl">call</span>
+<div>
+<h4 class="font-label-md">Phone</h4>
+<p class="opacity-90">9354114810</p>
+</div>
+</div>
+<div class="flex gap-md items-center">
+<span class="material-symbols-outlined text-3xl">mail</span>
+<div>
+<h4 class="font-label-md">Email</h4>
+<p class="opacity-90">info@aksclasses.com</p>
+</div>
+</div>
+</div>
+<div class="mt-2xl">
+<h4 class="font-label-md mb-md">Connect With Us</h4>
+<div class="flex gap-md">
+<div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/40 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-white">face_nod</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/40 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-white">share</span>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 p-xl bg-white">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-lg">Visit Our Center</h3>
+<div class="w-full h-80 rounded-2xl overflow-hidden bg-surface-container-low border border-outline-variant relative">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A detailed map visualization focusing on the Khora Colony area in Ghaziabad, marked with educational landmarks and modern UI elements like location pins and soft blue map styling. The style is clean, corporate, and highly legible." data-location="Ghaziabad" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCCeGHvtomkkfPL91NF3ZZYjlB7S8W_ROe28n6_EJf2w8FVWe_6q9b7q4-6lxxbJedpDseqvwo3ur8iKnLep8_qCfSLGQSQJKb3jhnERdjX8hswFcrjCTTEWP7u3-SF3vvNFCspLVIDU98deD5_yRddss9bNjY7g5qK6qcI3TEbYGS6FopDt-APlidazSbZEXp45spA3N7ewcHmYjS294aZBWRMhSLZsPWii-gPdFvgSLrg2PiwkKzItYRfxgc6Nr6u2X0iBRNPYV5')"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-white p-md rounded-xl shadow-xl flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="font-label-md text-on-surface">AKS Classes, Khora Colony</span>
+</div>
+</div>
+</div>
+<div class="mt-lg flex justify-center">
+<a class="flex items-center gap-2 text-primary font-bold hover:underline" href="https://wa.me/919354114810">
+<span class="material-symbols-outlined">directions</span>
+                                Get Directions via WhatsApp
+                            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface text-inverse-on-surface w-full py-xl px-margin-mobile md:px-margin-desktop">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-md">
+<div class="text-center md:text-left">
+<span class="font-headline-md text-headline-md font-bold block mb-xs">AKS Classes</span>
+<p class="font-body-md text-surface-variant opacity-80">Empowering Students in Ghaziabad through clarity and academic excellence.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-lg">
+<a class="font-label-sm text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-all underline" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-all" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-all" href="#contact">Location</a>
+<a class="font-label-sm text-label-sm text-surface-variant hover:text-primary-fixed-dim transition-all" href="#">Sitemap</a>
+</div>
+<p class="font-label-sm text-label-sm text-surface-variant mt-md md:mt-0">© 2026 AKS Classes. All Rights Reserved.</p>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-lg right-lg z-[100] w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-95 group" href="https://wa.me/919354114810" target="_blank">
+<svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+<div class="absolute right-16 bg-white text-on-surface px-md py-sm rounded-lg shadow-lg font-label-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-outline-variant">
+            Chat with AKS Classes
+        </div>
+</a>
+<script>
+        // Simple micro-interaction for navbar transparency
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.remove('shadow-sm');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.add('shadow-sm');
+            }
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>
