@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen Learning | Empowering Students</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#031636',
+            secondary: '#a04100',
+            surface: '#f7f9fb',
+            'surface-strong': '#ffffff',
+            muted: '#6b7280',
+            accent: '#f97316'
+          },
+          boxShadow: {
+            soft: '0 30px 60px rgba(3, 22, 54, 0.08)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+    body {
+      font-family: 'Manrope', sans-serif;
+      background: #f7f9fb;
+      color: #111827;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(226, 232, 240, 0.85);
+    }
+    .hero-shape {
+      filter: blur(72px);
+      opacity: 0.28;
+    }
+    .scroll-fade {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .scroll-fade.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="antialiased bg-surface">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-slate-200">
+    <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-20 items-center justify-between gap-4">
+        <a href="#home" class="flex items-center gap-3">
+          <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary text-white shadow-soft">
+            <span class="material-symbols-outlined text-2xl">school</span>
+          </div>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.24em] text-primary">NextGen Learning</p>
+            <p class="text-xs text-slate-500">Academic coaching for success</p>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-700">
+          <a href="#home" class="hover:text-primary transition">Home</a>
+          <a href="#why" class="hover:text-primary transition">Why Us</a>
+          <a href="#courses" class="hover:text-primary transition">Courses</a>
+          <a href="#faculty" class="hover:text-primary transition">Faculty</a>
+          <a href="#contact" class="hover:text-primary transition">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="tel:+919354114810" class="hidden sm:inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-slate-900">
+            <span class="material-symbols-outlined">call</span>
+            Call Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="relative overflow-hidden py-24">
+      <div class="absolute right-0 top-12 h-56 w-56 rounded-full bg-primary/20 hero-shape"></div>
+      <div class="absolute left-0 top-40 h-72 w-72 rounded-full bg-secondary/10 hero-shape"></div>
+      <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-16 lg:grid-cols-[1.2fr_0.8fr] items-center">
+          <div class="max-w-2xl">
+            <p class="inline-flex items-center gap-2 rounded-full border border-primary/10 bg-primary/5 px-4 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-primary">
+              <span class="h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
+              Admissions Open 2026/2027
+            </p>
+            <h1 class="mt-8 text-4xl font-extrabold tracking-tight text-slate-950 sm:text-5xl">Empowering Students for a <br class="hidden md:block"/> Brighter Future.</h1>
+            <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600">NextGen Learning blends experienced faculty, technology-driven classrooms, and personalized coaching to help students succeed in school, board exams, and competitive tests.</p>
+            <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+              <a href="tel:+919354114810" class="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-semibold text-white shadow-soft transition hover:bg-slate-900">
+                <span class="material-symbols-outlined">call</span>
+                Call Now
+              </a>
+              <a href="https://wa.me/919354114810" class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-8 py-4 text-sm font-semibold text-slate-900 transition hover:bg-slate-50">
+                <span class="material-symbols-outlined">chat</span>
+                WhatsApp
+              </a>
+            </div>
+            <div class="mt-12 grid gap-4 sm:grid-cols-3">
+              <div class="rounded-3xl bg-white p-6 shadow-soft">
+                <p class="text-3xl font-semibold text-primary">500+</p>
+                <p class="mt-2 text-sm uppercase tracking-[0.25em] text-slate-500">Students</p>
+              </div>
+              <div class="rounded-3xl bg-white p-6 shadow-soft">
+                <p class="text-3xl font-semibold text-primary">15+</p>
+                <p class="mt-2 text-sm uppercase tracking-[0.25em] text-slate-500">Teachers</p>
+              </div>
+              <div class="rounded-3xl bg-white p-6 shadow-soft">
+                <p class="text-3xl font-semibold text-primary">98%</p>
+                <p class="mt-2 text-sm uppercase tracking-[0.25em] text-slate-500">Success Rate</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative isolate">
+            <div class="rounded-[2rem] bg-white/90 p-2 shadow-soft ring-1 ring-slate-200/60 backdrop-blur-xl">
+              <img class="w-full rounded-[1.75rem] object-cover shadow-2xl" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80" alt="Modern classroom with students and teacher" />
+            </div>
+            <div class="absolute -bottom-6 left-6 hidden rounded-3xl border border-white/80 bg-white/95 p-5 shadow-xl md:block">
+              <div class="flex items-center gap-4">
+                <div class="rounded-2xl bg-secondary px-3 py-3 text-white">
+                  <span class="material-symbols-outlined">school</span>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-slate-900">Live Demo Available</p>
+                  <p class="text-sm text-slate-500">Book your free trial class</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="bg-surface py-24">
+      <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-secondary">Why Choose NextGen</p>
+          <h2 class="mt-4 text-3xl font-bold text-slate-950 sm:text-4xl">A professional learning experience designed to deliver results.</h2>
+          <p class="mt-4 mx-auto max-w-2xl text-lg leading-8 text-slate-600">Our institute combines strong fundamentals, exam practice, and mentoring so each student can grow confidently.</p>
+        </div>
+        <div class="mt-16 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          <div class="glass rounded-3xl p-8 scroll-fade">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <span class="material-symbols-outlined text-3xl">groups</span>
+            </div>
+            <h3 class="mt-6 text-xl font-semibold text-slate-950">Experienced Faculty</h3>
+            <p class="mt-3 text-slate-600">Learn from teachers with exam-proven expertise.</p>
+          </div>
+          <div class="glass rounded-3xl p-8 scroll-fade">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary/10 text-secondary">
+              <span class="material-symbols-outlined text-3xl">dashboard</span>
+            </div>
+            <h3 class="mt-6 text-xl font-semibold text-slate-950">Small Batch Size</h3>
+            <p class="mt-3 text-slate-600">Individual attention for every learner.</p>
+          </div>
+          <div class="glass rounded-3xl p-8 scroll-fade">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <span class="material-symbols-outlined text-3xl">smart_display</span>
+            </div>
+            <h3 class="mt-6 text-xl font-semibold text-slate-950">Smart Classrooms</h3>
+            <p class="mt-3 text-slate-600">Interactive teaching with digital tools.</p>
+          </div>
+          <div class="glass rounded-3xl p-8 scroll-fade">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary/10 text-secondary">
+              <span class="material-symbols-outlined text-3xl">quiz</span>
+            </div>
+            <h3 class="mt-6 text-xl font-semibold text-slate-950">Weekly Assessments</h3>
+            <p class="mt-3 text-slate-600">Frequent tests and performance reviews.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="courses" class="py-24">
+      <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-secondary">Courses</p>
+            <h2 class="mt-3 text-3xl font-bold text-slate-950 sm:text-4xl">Programs for every grade and goal.</h2>
+          </div>
+          <a href="https://wa.me/919354114810?text=Hi%20NextGen%20Learning%2C%20I%20want%20to%20enroll%20now." target="_blank" class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-soft hover:bg-slate-900 transition">Enroll Now</a>
+        </div>
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <div class="glass rounded-[2rem] p-8 scroll-fade">
+            <div class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <span class="material-symbols-outlined text-3xl">calculate</span>
+            </div>
+            <h3 class="mt-6 text-2xl font-semibold text-slate-950">Foundational Classes</h3>
+            <p class="mt-4 text-slate-600">Grades 6–10 with CBSE/ICSE aligned teaching, concept-building and test practice.</p>
+            <ul class="mt-6 space-y-3 text-slate-600">
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> Strong fundamentals</li>
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> Weekly test series</li>
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> Personalized review</li>
+            </ul>
+          </div>
+          <div class="glass rounded-[2rem] p-8 scroll-fade">
+            <div class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary/10 text-secondary">
+              <span class="material-symbols-outlined text-3xl">science</span>
+            </div>
+            <h3 class="mt-6 text-2xl font-semibold text-slate-950">Senior Secondary</h3>
+            <p class="mt-4 text-slate-600">11th & 12th PCM/PCB programs with board-focused coaching and revision support.</p>
+            <ul class="mt-6 space-y-3 text-slate-600">
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> Subject experts</li>
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> Live doubt sessions</li>
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> Practical revision</li>
+            </ul>
+          </div>
+          <div class="glass rounded-[2rem] p-8 scroll-fade">
+            <div class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <span class="material-symbols-outlined text-3xl">emoji_objects</span>
+            </div>
+            <h3 class="mt-6 text-2xl font-semibold text-slate-950">Competitive Prep</h3>
+            <p class="mt-4 text-slate-600">JEE, NEET, CUET and NTSE coaching with strategy sessions and mocks.</p>
+            <ul class="mt-6 space-y-3 text-slate-600">
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> Targeted concept drills</li>
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> Full-length simulators</li>
+              <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> Result-oriented mentoring</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faculty" class="bg-surface py-24">
+      <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-secondary">Faculty</p>
+          <h2 class="mt-4 text-3xl font-bold text-slate-950 sm:text-4xl">Meet the team guiding every student.</h2>
+          <p class="mt-4 mx-auto max-w-2xl text-lg leading-8 text-slate-600">Experienced mentors across Mathematics, Physics, Chemistry, Biology and English.</p>
+        </div>
+        <div class="mt-16 grid gap-6 lg:grid-cols-4">
+          <div class="glass rounded-[2rem] p-8 text-center scroll-fade">
+            <div class="mx-auto mb-6 h-24 w-24 overflow-hidden rounded-full border-4 border-white bg-slate-100">
+              <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Faculty photo" />
+            </div>
+            <h3 class="text-xl font-semibold text-slate-950">Dr. Rajesh Kumar</h3>
+            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-secondary">Mathematics</p>
+            <p class="mt-4 text-slate-600">15+ years of JEE and board exam coaching with a focus on conceptual clarity.</p>
+          </div>
+          <div class="glass rounded-[2rem] p-8 text-center scroll-fade">
+            <div class="mx-auto mb-6 h-24 w-24 overflow-hidden rounded-full border-4 border-white bg-slate-100">
+              <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Faculty photo" />
+            </div>
+            <h3 class="text-xl font-semibold text-slate-950">Ms. Priya Sharma</h3>
+            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-secondary">Physics</p>
+            <p class="mt-4 text-slate-600">Hands-on teaching style with strong support for conceptual and board mastery.</p>
+          </div>
+          <div class="glass rounded-[2rem] p-8 text-center scroll-fade">
+            <div class="mx-auto mb-6 h-24 w-24 overflow-hidden rounded-full border-4 border-white bg-slate-100">
+              <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80" alt="Faculty photo" />
+            </div>
+            <h3 class="text-xl font-semibold text-slate-950">Dr. Amit Verma</h3>
+            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-secondary">Chemistry</p>
+            <p class="mt-4 text-slate-600">PhD chemistry expert mentoring top NEET and JEE aspirants.</p>
+          </div>
+          <div class="glass rounded-[2rem] p-8 text-center scroll-fade">
+            <div class="mx-auto mb-6 h-24 w-24 overflow-hidden rounded-full border-4 border-white bg-slate-100">
+              <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80" alt="Faculty photo" />
+            </div>
+            <h3 class="text-xl font-semibold text-slate-950">Ms. Ananya Iyer</h3>
+            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-secondary">English</p>
+            <p class="mt-4 text-slate-600">Communication coach with a modern, student-friendly teaching method.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="admissions" class="py-24">
+      <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+        <div class="relative overflow-hidden rounded-[3rem] bg-primary px-8 py-16 text-white shadow-soft md:px-16 md:py-20">
+          <div class="absolute right-0 top-0 h-56 w-56 rounded-full bg-white/10"></div>
+          <div class="absolute left-0 bottom-0 h-56 w-56 rounded-full bg-secondary/15"></div>
+          <div class="relative z-10 grid gap-10 lg:grid-cols-[1fr_0.8fr] items-center">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-secondary/80">Admissions</p>
+              <h2 class="mt-4 text-3xl font-bold sm:text-4xl">Book a free demo and secure your seat.</h2>
+              <p class="mt-4 max-w-xl text-base leading-7 text-white/80">Limited seats are available for the 2026/2027 batch. Fill in your details and send us a WhatsApp message instantly.</p>
+            </div>
+            <form id="admissionForm" class="grid gap-4 sm:grid-cols-2">
+              <input id="parentName" type="text" placeholder="Parent's Name" class="rounded-3xl border border-white/20 bg-white/10 px-5 py-4 text-sm text-white placeholder:text-white/70 focus:border-white focus:outline-none focus:ring-2 focus:ring-white/30" />
+              <input id="studentName" type="text" placeholder="Student's Name" class="rounded-3xl border border-white/20 bg-white/10 px-5 py-4 text-sm text-white placeholder:text-white/70 focus:border-white focus:outline-none focus:ring-2 focus:ring-white/30" />
+              <input id="studentClass" type="text" placeholder="Class (e.g. 10th, 12th)" class="rounded-3xl border border-white/20 bg-white/10 px-5 py-4 text-sm text-white placeholder:text-white/70 focus:border-white focus:outline-none focus:ring-2 focus:ring-white/30" />
+              <input id="phoneNumber" type="tel" placeholder="Phone Number" class="rounded-3xl border border-white/20 bg-white/10 px-5 py-4 text-sm text-white placeholder:text-white/70 focus:border-white focus:outline-none focus:ring-2 focus:ring-white/30" />
+              <input id="courseInterest" type="text" placeholder="Interested Course" class="rounded-3xl border border-white/20 bg-white/10 px-5 py-4 text-sm text-white placeholder:text-white/70 focus:border-white focus:outline-none focus:ring-2 focus:ring-white/30" />
+              <button type="button" onclick="sendAdmissionWhatsApp()" class="inline-flex items-center justify-center rounded-3xl bg-secondary px-5 py-4 text-sm font-semibold text-white shadow-soft transition hover:bg-[#d15a00]">Enroll Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="contact" class="bg-slate-950 text-white">
+    <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid gap-8 lg:grid-cols-4">
+        <div class="space-y-4">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-secondary">NextGen Learning</p>
+          <p class="text-slate-400">Premium coaching institute in Ghaziabad with focused guidance for academic, board, and competitive exam success.</p>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">Quick Links</h3>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li><a href="#why" class="hover:text-white">About</a></li>
+            <li><a href="#courses" class="hover:text-white">Courses</a></li>
+            <li><a href="#faculty" class="hover:text-white">Faculty</a></li>
+            <li><a href="#admissions" class="hover:text-white">Admissions</a></li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">Support</h3>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li><a href="#" class="hover:text-white">FAQ</a></li>
+            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-400">Contact</h3>
+          <p class="text-sm text-slate-300">Prem Vihar, Khora Colony,<br/>Ghaziabad, UP</p>
+          <p class="text-sm text-slate-300">+91 9354114810</p>
+          <p class="text-sm text-slate-300">info@nextgenlearning.com</p>
+        </div>
+      </div>
+      <div class="mt-12 border-t border-slate-800 pt-8 text-center text-sm text-slate-500">© 2026 NextGen Learning. All rights reserved.</div>
+    </div>
+  </footer>
+  <script>
+    function sendAdmissionWhatsApp() {
+      const parentName = document.getElementById('parentName').value.trim();
+      const studentName = document.getElementById('studentName').value.trim();
+      const studentClass = document.getElementById('studentClass').value.trim();
+      const phoneNumber = document.getElementById('phoneNumber').value.trim();
+      const courseInterest = document.getElementById('courseInterest').value.trim();
+
+      if (!parentName || !studentName || !studentClass || !phoneNumber) {
+        alert('कृपया Parent Name, Student Name, Class, और Phone Number भरें।');
+        return;
+      }
+
+      const message = `Hi NextGen Learning,\n\nParent Name: ${parentName}\nStudent Name: ${studentName}\nClass: ${studentClass}\nPhone: ${phoneNumber}\nCourse Interest: ${courseInterest || 'N/A'}\n\nPlease contact me with admission details.`;
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/919354114810?text=${encodedMessage}`;
+      window.open(whatsappUrl, '_blank');
+    }
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.scroll-fade').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
